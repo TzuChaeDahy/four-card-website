@@ -1,5 +1,5 @@
-function Title({ text }) {
-  return <h1>{text}</h1>;
+function Title({ children }) {
+  return <h1>{children}</h1>;
 }
 
 export default Title;

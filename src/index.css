@@ -2,15 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  border: 1px solid black;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+@layer base {
+  body {
+    @apply min-h-screen w-full font-poppins;
+  }
 }
 
-#root {
-  width: 100%;
-  min-height: 100vh;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+* {
+  border: 1px solid black;
 }

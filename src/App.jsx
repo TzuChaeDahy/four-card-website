@@ -1,18 +1,12 @@
-import Subtitle from "./layout/Subtitle";
-import Text from "./components/Text";
-import Content from "./components/Content";
+import Cards from "./components/Cards";
+import Header from "./components/Header";
 
 function App() {
   return (
     <div>
-      <Subtitle text="Reliable, efficient delivery" />
-      <Text
-        titleText="Powered by Technology"
-        paragText="Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is sucessfull"
-      />
-      <Content />
+      <Header />
+      <Cards />
     </div>
   );
 }
-
 export default App;
