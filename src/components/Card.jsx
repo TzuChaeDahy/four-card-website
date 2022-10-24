@@ -10,7 +10,7 @@ function Card({ title, children, cardKey }) {
   const sources = [Supervisor, TeamBuilder, Karma, Calculator];
 
   return (
-    <li key={cardKey}>
+    <li key={cardKey} className="border border-blue-600">
       <Title>{title}</Title>
       <Text>{children}</Text>
       <img src={sources[cardKey]} alt="No value" />

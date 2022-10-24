@@ -14,10 +14,10 @@ function Header() {
   ];
 
   return (
-    <header>
-      <Subtitle>{headingMessages[0].subtitle}</Subtitle>
-      <Title>{headingMessages[1].title}</Title>
-      <Text>{headingMessages[1].text}</Text>
+    <header className="mb-10">
+      <Subtitle center="true">{headingMessages[0].subtitle}</Subtitle>
+      <Title center="true">{headingMessages[1].title}</Title>
+      <Text center="true">{headingMessages[1].text}</Text>
     </header>
   );
 }

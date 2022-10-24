@@ -29,7 +29,7 @@ function Cards() {
     );
   });
 
-  return <ul>{messagesMap}</ul>;
+  return <ul className="border border-red-600 grid gap-6">{messagesMap}</ul>;
 }
 
 export default Cards;
