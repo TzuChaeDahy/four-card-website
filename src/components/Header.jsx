@@ -14,7 +14,7 @@ function Header() {
   ];
 
   return (
-    <header className="mb-10">
+    <header className="mb-10 max-w-lg">
       <Subtitle center="true">{headingMessages[0].subtitle}</Subtitle>
       <Title center="true">{headingMessages[1].title}</Title>
       <Text center="true">{headingMessages[1].text}</Text>

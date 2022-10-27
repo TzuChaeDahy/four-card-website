@@ -6,6 +6,6 @@
 
 @layer base {
   body {
-    @apply min-h-screen w-full font-poppins text-[15px] px-7 py-12;
+    @apply min-h-screen w-full font-poppins text-[15px] px-7 py-10;
   }
 }
