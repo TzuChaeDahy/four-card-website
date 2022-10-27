@@ -35,7 +35,7 @@ function Card({ title, children, cardKey, color }) {
       <img
         src={sources[cardKey]}
         alt="No value"
-        className="mt-5 sm:mt-10 ml-auto border border-black"
+        className="mt-5 sm:mt-10 ml-auto border"
       />
     </li>
   );
