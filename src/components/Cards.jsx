@@ -1,42 +1,50 @@
 import Card from "./Card";
 
 function Cards() {
-  const CardMessages = [
+  const CardsInfo = [
     {
       title: "Supervisor",
       text: "Monitors activity to identify project roadblocks",
-      color: "border-project-cyan",
+      borderColor: "border-project-cyan",
+      alt: "Magnifier Icon",
     },
     {
       title: "Team Builder",
       text: "Scans our talent network to create the optimal team for your project",
-      color: "border-project-red",
+      borderColor: "border-project-red",
+      alt: "House and Website Icon",
     },
     {
       title: "Karma",
       text: "Regularly evaluates our talent to ensure quality",
-      color: "border-project-orange",
+      borderColor: "border-project-orange",
+      alt: "Idea Lamp Icon",
     },
     {
       title: "Calculator",
       text: "Uses data from past projects to provide better delivery estimates",
-      color: "border-project-blue",
+      borderColor: "border-project-blue",
+      alt: "PC Screen Icon",
     },
   ];
 
-  const messagesMap = CardMessages.map((message, index) => {
+  const messagesMap = CardsInfo.map((cardContent, index) => {
     return (
-      <Card color={message.color} title={message.title} cardKey={index}>
-        {message.text}
+      <Card
+        borderColor={cardContent.borderColor}
+        title={cardContent.title}
+        cardKey={index}
+        alt={cardContent.alt}
+      >
+        {cardContent.text}
       </Card>
     );
   });
 
-  return (
-    <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:grid-rows-4">
-      {messagesMap}
-    </ul>
-  );
+  const CardsContainerStyles =
+    "grid gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:grid-rows-4";
+
+  return <ul className={CardsContainerStyles}>{messagesMap}</ul>;
 }
 
 export default Cards;
